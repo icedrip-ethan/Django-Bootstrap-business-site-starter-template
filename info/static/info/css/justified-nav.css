@@ -1,0 +1,77 @@
+
+.nav-justified > li > a {
+  padding-bottom: 15px;
+  margin-bottom: 0;
+  font-size:16pt;
+  font-weight: bold;
+  color: #ededed;
+  text-align: center;
+  /*background-color: #e5e5e5; */
+/*  background-image: -webkit-gradient(linear, left top, left bottom, from(#777570), to(#000));
+  background-image: -webkit-linear-gradient(top, #777570 0%, #000 100%);
+  background-image:      -o-linear-gradient(top, #777570 0%, #000 100%);*/
+  background-image:         linear-gradient(to bottom, #444444 0%,#191919 100%);
+
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#777570', endColorstr='#000',GradientType=0 ); 
+  background-repeat: repeat-x; 
+}
+.nav-justified > .active > a {
+  /*background-color: #000;*/
+  color:#000;
+  background: #e0e0e0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 7px rgba(0,0,0,.15);
+          box-shadow: inset 0 4px 8px rgba(0,0,0,.15);
+}
+.nav-justified > .active > a:hover {
+  color:#000;
+  background-color: #e0e0e0;
+  text-decoration:none;
+}
+.nav-justified > li > a:hover {
+  /*color:#000;*/
+  background: #1c1c1c;
+  /*text-decoration: underline;*/
+}
+
+/*.nav-justified > .active > a:focus*/
+
+/*to let the rounded corners to appear on small screen*/
+.nav-justified > li:first-child > a {
+  border-radius: 10px 10px 0 0;
+}
+.nav-justified > li:last-child > a {
+  border-bottom: 0;
+  border-radius: 0 0 10px 10px;
+}
+
+
+@media (min-width: 768px) {
+  .nav-justified {
+    /*max-height: 32px;*/
+  }
+  .nav-justified > li > a {
+    border-right: 1px solid #28466f; /*d5d5d5*/
+    border-left: 1px solid #28466f; /*fff*/
+
+  }
+  .nav-justified > li:first-child > a {
+    border-left: 0;
+    border-radius: 7px 0 0 7px;
+  }
+  .nav-justified > li:last-child > a {
+    border-right: 0;
+    border-radius: 0 7px 7px 0;
+  }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .masthead,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}

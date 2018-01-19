@@ -1,0 +1,578 @@
+/*B*/
+
+
+body {
+	padding-top:0px;
+	padding-bottom: 100px; 
+  overflow-y: scroll;
+}
+
+
+/* SCREEN BREAKS */
+
+@media(max-width: 1700px) {
+  .card-1 {
+    width: 80% !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .services-break{
+    display:none;
+  }
+
+  #location-header{
+    padding-top: 15px !important;
+    padding-right: 22px !important;
+  }
+}
+@media (max-width: 768px) {
+  #ty-hr-bottom {
+    display: none;
+  }
+  #toggle-mobile {
+    display:block !important;
+  }
+  #logo-footer {
+    display: none !important;
+  }
+  #icon-footer {
+    padding-top: 0px !important;
+  }
+  #header-btt-big {
+    display: none !important;
+  }
+  #about-top-hr {
+    display: none !important;
+  }
+  #about-small-hr {
+    display: block !important;
+  }
+  #row-header {
+    padding-left: 20px !important;
+  }
+  #text-header {
+    font-size: 22pt !important;
+  }
+  body {
+    padding-bottom: 60px !important;
+  }
+}
+@media (max-width: 568px) {
+  .card-1{
+    width: 100% !important;
+  }
+}
+
+/* HEADER */
+#row-header {
+  padding-left:50px;
+}
+
+#logo-header {
+  height:50px;
+  padding-top:11px;
+}
+
+#text-header {
+  display:inline;
+  color:#000;
+  font-weight:bold;
+  vertical-align:bottom;
+}
+
+#location-header {
+  float:right;
+  padding-right:40px;
+  font-weight:bold;
+  padding-top:30px;
+  color:#28466f;
+}
+.navbar-fixed-bottom{
+  background-color: #efefef;
+  border-top: 1.5px solid #b7bfcc;
+}
+#nav-row {
+  padding-top:10px;
+  padding-right:20px;
+  padding-left:20px;"
+}
+
+#logo-footer {
+  height:80px;
+  padding-top:18px;
+  padding-bottom:0px;
+  display:block;
+  margin:auto;
+}
+
+#address {
+  font-size: 12pt;
+  line-height:110%;
+  padding-top:15px;
+  text-align:center;
+}
+
+#icon-footer {
+  padding-top:20px;
+  text-align:center;
+}
+
+#icon-secon-div {
+  display:inline-block;
+}
+#glyph-email, #glyph-phone {
+  font-size: 40pt;
+  color:#28466f;
+  padding-right:40px;
+}
+
+#glyph-linkedin {
+  font-size: 40pt;
+  color:#28466f;
+}
+
+a:hover > #glyph-linkedin {
+  color: #000;
+}
+a:hover > #glyph-email {
+  color: #000;
+}
+a:hover > #glyph-phone {
+  color: #000;
+}
+
+#myNavbar {
+  overflow:hidden !important;
+}
+/* HOME */
+
+#home-logo-div {
+  padding-top:80px;
+  padding-bottom:60px;
+}
+
+
+#home-logo {
+  max-height:180px;
+  width:auto;
+  margin:auto;
+}
+
+
+hr.featurette-divider {
+  background-color: #28466f;
+  height: 5px;
+  max-width:1100px;
+  margin: auto;
+}
+
+#home-welcome {
+  padding-top:20px;
+  text-align:center;
+}
+
+#home-mission-statement {
+  font-size:22px;
+  text-align:center;
+}
+
+/* ABOUT*/
+#about-banner {
+  border-radius:20px;
+  max-width: 95%;
+  opacity:.82;
+  margin: auto;
+}
+
+#about-ty-pic {
+  width: 100%;
+  margin: auto;
+  border-radius: 10px 10px 0px 0px; 
+}
+
+.card {
+  background-color: #2d2d2d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 200px;
+  border-radius: 15px;
+  margin:auto;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.7);
+}
+h1.about-header{
+  text-align: center;
+  padding-top: 17pt;
+}
+
+p.about-paragraph {
+  font-size: 17pt;
+}
+
+#ty-card {
+  text-align:center;
+  color: white;
+}
+
+#ty-card-text {
+  font-size:14pt;
+  color:white;
+  text-align:center;
+  padding:0px 5px 10px 5px;
+}
+
+#about-small-hr {
+  display:none;
+}
+
+h1.bmodel-header {
+  text-align: center;
+  padding-top: 17pt;
+}
+
+#bmodel1 {
+  font-size: 17pt;
+}
+
+#bmodel2 {
+  text-align: center;
+  font-size: 17pt;
+}
+/* SERVICES */
+
+#services-header {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.services-image {
+  width:40%;
+  margin:auto;
+  padding-top:15px;
+}
+
+#services-investment {
+  width:55%;
+  margin:auto;
+  padding-top:15px;
+}
+
+#services-risk {
+  width:45%;
+  margin:auto;
+  padding-top:15px;
+}
+
+.card1-text {
+  padding:0px 15px 15px 15px;
+  font-size: 14pt;
+}
+
+
+.card-1 {
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 70%;
+  margin:auto;
+  min-height: 450px;
+  text-align: center;
+  border-radius: 10px;
+
+}
+.card-1:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.0);
+}
+
+#services-bmodel-div {
+  max-width: 1100px;
+  text-align: center;
+}
+
+
+/* RESOURCES */
+
+h4.well-text {
+  text-align: left;
+}
+
+div.resource-buttons {
+	margin: auto;
+  max-width: 500px;
+}
+button  {
+  color: #28466f  !important;
+  font-size: 15pt !important;
+}
+button.rr {
+  border-bottom: 2px solid #535354 !important;
+}
+
+.resource-buttons > a:hover {
+  text-decoration: none !important;
+}
+
+#resources-toc {
+	text-align: center;
+}
+
+#r-history-header {
+  color: #28466f;
+}
+#r-history-block {
+	text-align: center;
+}
+
+#r-history-text {
+	text-align: left;
+	max-width: 1100px;
+	font-size: 14pt;
+}
+
+#r-investment-block {
+	text-align: left;
+	font-size: 14pt;
+}
+
+#r-investment-header {
+  color: #28466f;
+	text-align: center;
+
+}
+#r-company-header {
+  color: #28466f;
+	text-align: center;
+}
+#r-company-block {
+	font-size: 14pt;
+}
+
+#resource-cs-block {
+	text-align: center;
+}
+
+#rc-cs-pic {
+	margin: auto;
+  padding-bottom: 40px;
+}
+
+#schwab-header {
+  color: #28466f;
+}
+#r-schwab-login {
+  text-align: center;
+  max-width: 400px;
+  margin: auto;
+}
+#riskalyze-header {
+  color: #28466f;
+  text-align: center;
+}
+#riskalyze-block {
+  text-align: center;
+}
+
+iframe {
+  width: 640px;
+  height: 360px;
+  max-width: 100%;
+}
+
+/* CONTACT */
+
+
+#contact-header {
+  text-align: left;
+  padding-top:15px;
+  padding-bottom:20px;
+}
+
+#contact-block {
+  text-align: left;
+  max-width: 1100px;
+  font-size: 20pt;
+  word-wrap:break-word;
+}
+
+
+
+#contact-location {
+  text-align:center;
+  font-size:20pt;
+}
+
+#map {
+  width:auto;
+  height:400px;
+}
+
+#contact-email {
+  padding-top: 10px;
+  text-align: center;
+}
+
+#toggle-mobile {
+  text-align:center;
+  padding-left: 40px;
+  padding-top: 10px;
+  display: none;
+}
+
+#toggle-logo {
+  height:30px;
+  padding-right: 5px;
+}
+#success-header {
+  padding-top: 50px;
+  text-align: center;
+}
+
+
+/*@media(max-width: 1700px){
+  .card-1{
+    width: 90%  !important;
+  }
+  #services-bmodel{
+    padding-left: 10px !important;
+  }
+}
+@media (max-width: 992px) {
+	body{
+		padding-bottom: 175px;
+	}
+  #operations{
+    padding-left:5px !important;
+  }
+  .sbreak{
+    display:none;
+  }
+  #glyph-span {
+    padding-right: 0px !important;
+  }
+}
+@media (max-width: 768px) {
+	#ggs {
+		padding-top: 0px !important;
+	}
+
+	#footer-cube, #addy  {
+		display: none;
+	}
+	body{
+		padding-bottom: 170px;
+	}
+  #top-header {
+    padding-left: 15px !important;
+  }
+}
+
+
+#ggs {
+	padding-top: 20px;
+	padding-bottom: 5px;
+}
+
+
+
+#banner {
+	border-radius:20px;
+	opacity:.82;
+}
+#divider-vert {
+    background-color: #28466f;
+    height: 300px;
+    width:10px;
+}
+#ty {
+	width: 100%;
+	margin: auto;
+	border-radius: 10px 10px 0px 0px;
+}
+#al {
+	text-align:center;
+}
+hr.featurette-divider {
+  background-color: #28466f;
+  height: 5px;
+  max-width:1100px;
+  margin: auto;
+}
+.underline {
+  background-repeat: repeat-x;
+}
+
+
+
+.fa {
+  font-size: 40pt;
+}
+i {
+	color:#28466f;
+	font-size: 40px;
+  font-size:40pt;
+}
+
+a:hover > span {
+	color: #000;
+}
+.navbar{
+
+  color: #6b6b6b;
+
+  text-align: center;
+  background-color: #efefef;
+
+  border-top: 1.5px solid #b7bfcc; e5e5e5
+}*/
+/*.footer{
+ 
+  padding-top:15px;
+  color: #6b6b6b;
+
+  text-align: center;
+  background-color: #efefef;
+
+  border-top: 1.5px solid #b7bfcc;
+}*/
+
+/*#services {
+  font-size:16pt;
+	text-align: center;
+}
+
+h1 {
+	font-size:2.8em;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 200px;
+    border-radius: 15px;
+    margin:auto;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.7);
+}
+
+
+
+.card-1 {
+	background-color: #ffffff;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 70%;
+    margin:auto;
+    min-height: 500px;
+
+}
+.card-1:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.7);
+}*/
+
+
+

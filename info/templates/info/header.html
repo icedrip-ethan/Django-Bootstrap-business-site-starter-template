@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Business Company</title>
+	<meta charset="utf-8" />
+	{% load staticfiles %}
+ 	<link rel="shortcut icon" href="{% static 'info/img/textcube.png' %}">
+	<meta name="viewport" content = "width=device-width, initial-scale=1">
+
+	<!-- General Styling Sheets -->
+	<link rel="stylesheet" href="{% static 'info/css/bootstrap.min.css' %}"/>
+ 	<link rel="stylesheet" href="{% static 'info/css/ss.css' %}"/>
+ 	<link rel="stylesheet" href="{% static 'info/css/justified-nav.css' %}"/>
+
+ 	<!-- For Linkedin Icon -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+	<!-- For Ubuntu Font -->
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu:400" />
+
+	<!-- Handles Active Navbar Tabs (Order Matters) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="{% static 'info/js/Active.js' %}"></script>
+
+	<!--  Email reCAPTCHA  -->
+	<script src='https://www.google.com/recaptcha/api.js' async defer></script>
+	
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body style="font-family: 'Ubuntu', sans-serif; background-image: linear-gradient(to bottom, rgba(255,255,255,0.86) 0%,rgba(255,255,255,0.86) 100%), url({% static 'info/img/sky.jpg' %});">
+
+    <div class='container-fluid'>
+	    <div class='row'>
+	      <div id='row-header' class='col-sm-12'>
+	        <img id='logo-header' src="{% static 'info/img/textcube.png' %}">
+
+	        <h1 id='text-header'>Business Company LLC &#174;<small id='location-header'>California</small></h1>
+	      </div>
+	    </div>
+	    <div class='row' id='nav-row'> 
+	      <div class='col-sm-12'>
+	  			<div class="masthead">
+	        	<nav>
+	  			    <ul class="nav nav-justified">
+	  			      <li><a href="/">Home</a></li>
+	              <li><a href="/about/">About</a></li>
+	             	<li><a href="/services/">Services</a></li>
+	  				    <li><a href="/resources/">Resources</a></li>
+                <li><a href="/contact/">Contact</a></li>
+	  			    </ul>
+	  			  </nav>
+	  			</div>
+	  		</div>
+	  	</div>
+    </div>
+
+
+  <div class='container-fluid'>
+     {% block content %}
+     {% endblock %}
+  </div>
+
+<footer>
+  <nav class="navbar navbar-default navbar-fixed-bottom">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span> 
+        </button> 
+     		<div id='toggle-mobile'>
+     			<img id='toggle-logo' src="{% static 'info/img/textcube.png' %}">
+     			<a href="#">Back to top</a>
+     		</div>
+			</div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+      	<div class='row'>
+	      	<div class=col-sm-4>
+		        <img id='logo-footer' alt="Brand" src="{% static 'info/img/textcube.png' %}">
+		  		</div>
+		  		<div class="col-sm-4">
+				  	<p id='address'>
+					    <strong>Business Company LLC &#174;</strong><br>
+					    xxx Island Blvd Suite 200<br>
+					    California<br>
+					    <a id='header-btt-big' href="#">Back to top</a>
+						</p>
+		  		</div>
+				  <div id='icon-footer' class="col-sm-4">
+				  	<div id='icon-second-div'>
+					  	<a href='/contact#email'><span id='glyph-email' class="fa fa-envelope"></span></a>
+					  	<a href="tel:+1-xxx-xxx-xxxx"><span id='glyph-phone' class="fa fa-phone"></span></a>
+					  	<a href='https://www.linkedin.com/in/' target="_blank"><span id='glyph-linkedin' class="fa fa-linkedin"></span></a>
+					  </div>
+				  </div>
+				</div>
+			</div>
+  </nav>
+</footer>
+</body>
+
+</html>

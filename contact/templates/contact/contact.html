@@ -1,0 +1,97 @@
+{% extends 'info/header.html' %}
+{% block content %}
+{% load staticfiles %}
+
+<br><br><br>
+<hr class='featurette-divider'>
+<div id='contact-block' class="container">
+  <h1 id='contact-header'>Contact</h1>
+  <p><strong>Phone:</strong> xxx-xxx-xxxx</p>
+  <p><strong>Email:</strong> xxxxxxxxx@example.com</p>
+  <p><strong>Fax:</strong> xxx-xxx-xxxx</p>
+</div>
+
+<br>
+
+<hr class='featurette-divider'>
+<br><br>
+<p id='contact-location'>Our office is conveniently located in the Bay Area.</p>
+<br><br>
+	<div class='container-fluid'>
+		<div id="map"></div>
+	</div>
+
+<script>
+	function myMap() {
+	var myLatLng = {lat: 37.737185, lng:-122.240229};
+  var mapOptions = {
+      center: new google.maps.LatLng(myLatLng),
+      zoom: 14,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      // gestureHandling: 'greedy'
+  }
+	var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+	var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+        });
+ //resize stuff
+	google.maps.event.addDomListener(window, "resize", function() {
+  var center = map.getCenter();
+  google.maps.event.trigger(map, "resize");
+  map.setCenter(center);
+  });
+  }
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=XXXXX___YOUR_KEY___XXXXX&callback=myMap"></script>
+
+<br><br><br>
+<hr class="featurette-divider" id='email'>
+<div class="container" style="text-align: center;padding-top: 10px;">
+  {% if messages %}
+  <ul class="messages" style="list-style: none;font-size: 19pt;color: red;">
+      {% for message in messages %}
+      <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+      {% endfor %}
+  </ul>
+  {% endif %}
+</div>
+
+<h1 id='contact-email' style="">Contact Us</h1>
+<form class="form-group" method="POST">
+  {% csrf_token %}
+  <div class="form-group" style="max-width: 500px;margin: auto;">
+
+    <label class="control-label" for="full_name">Full Name:</label>
+    <input type="text" class="form-control" id="form-control" placeholder="Enter your name" name="full_name">
+    <br>
+
+    <label class="control-label" for="from_email">Your Email:</label>
+		<input type="text" class="form-control" id="form-control" placeholder="Enter your email address" name="from_email">
+    <br>
+
+    <label class="control-label" for="subject">Subject:</label>
+    <input type="text" class="form-control" id="form-control" placeholder="Subject" name="subject">
+    <br>
+
+    <label class="control-label" for="message">Email body:</label>
+    <textarea style="height: 200px;" type="text" class="form-control" id="form-control" placeholder="Email body" name="message"> </textarea>
+    <br>
+
+    <script type="text/javascript"> 
+      function onHuman(response) { 
+        document.getElementById('captcha').value = response; 
+      } 
+    </script>
+
+    <center><div class="g-recaptcha" data-callback="onHuman" data-theme="dark" data-sitekey="PUBLIC_KEY"></div>
+    <input type="hidden" id="captcha" name="captcha" value="">
+    <br>
+
+    <button class="btn btn-default btn-md" type="submit">Send</button>
+
+  </div>
+</form>
+<hr class="featurette-divider">
+{% endblock %}

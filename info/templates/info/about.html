@@ -1,0 +1,81 @@
+{% extends 'info/header.html' %}
+{% block content %}
+{% load staticfiles %}
+<div class="row" id='about-small-hr'>
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<br>
+		<hr class="featurette-divider">
+	</div>
+</div>
+<br><br>
+<div class='row'>
+	<div class=col-sm-3>
+		<div class='card'>
+	    <img id='about-ty-pic' src="{% static 'info/img/chillin.jpg' %}" alt="ty">
+			<h3 id='ty-card'>John Doe</h3>
+	    <p id='ty-card-text'>President & CEO</p>
+
+  	</div>
+	</div>
+
+	<div class=col-sm-6>
+		<hr id='ty-hr-bottom' class="featurette-divider">
+		<h1 class='about-header'>John Doe</h1>
+		<p class='about-paragraph'>Diamond in ventum
+		Alba cutis mea trans crystallini
+		Sca, Sc-princeps Scandinavian
+		Ad quod satus super incipere
+		Im 'non Paenitet me peccatorum meorum
+		Fuerat hie in aeternum, unde venis?
+		Qui got sucum et PEDICA
+		Conscious lacta me in bin
+		Flante fumos annulos dinando Castaneo
+		Mortuus, mortuus in anima
+		Somniare densissima non spicæ tenues,
+		Gratias ad me in qua civitas<p>
+
+	  <br><br>
+
+		<hr class='featurette-divider'>
+		<h1 class='about-header'>Business Philosophy</h1>
+		<p class = 'about-paragraph'>Diamond in ventum
+		Alba cutis mea trans crystallini
+		Sca, Sc-princeps Scandinavian
+		Ad quod satus super incipere
+		Im 'non Paenitet me peccatorum meorum
+		Fuerat hie in aeternum, unde venis?
+		Qui got sucum et PEDICA
+		Conscious lacta me in bin
+		Flante fumos annulos dinando Castaneo
+		Mortuus, mortuus in anima
+		Somniare densissima non spicæ tenues,
+		Gratias ad me in qua civitas</p>
+
+		<br><br>
+
+		<hr class='featurette-divider'>
+	  <h1 class='bmodel-header'>Our Business Model</h1>
+	  <div id='bmodel1'>
+	    <p>Aequaliter Nubila Solis Ortus angelus, unavailable page
+			Tristique pretium caelo sordida omnia fiunt
+			Aequaliter Nubila Solis Ortus angelus, unavailable page
+			Tristique pretium caelo sordida omnia fiunt
+			Aequaliter Nubila Solis Ortus angelus, unavailable page
+			Tristique pretium caelo sordida omnia fiunt
+			Et ultra non faciam vos cash
+			Aequaliter Nubila Solis Ortus angelus, unavailable page</p>
+
+	  </div>
+	  <br>
+	  <div id='bmodel2'>
+	    <p>Feel free to contact us for more information.</p>
+	    <p>We look forward to meeting with you!</p>
+	  </div>
+	  <br><br>
+	  <hr class='featurette-divider'>
+	</div>
+</div>
+<br><br>
+<img id='about-banner' src='{% static "info/img/btb.png" %}' class='img-responsive'>
+{% endblock %}
